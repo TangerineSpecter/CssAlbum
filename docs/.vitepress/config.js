@@ -13,6 +13,10 @@ const config = {
         docFooter: { prev: '上一篇', next: '下一篇' },
         lastUpdatedText: "最近更新时间",
         logo: '/icon.png',
+        footer: {
+            message: 'Released under the Apache-2.0 license License.',
+            copyright: 'Copyright © 2023-present Evan You'
+        },
         socialLinks: [
             { icon: 'github', link: 'https://github.com/TangerineSpecter' }
         ],

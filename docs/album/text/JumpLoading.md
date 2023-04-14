@@ -1,22 +1,31 @@
-# 涂抹效果
+# 跳动Loading
 
-> 文字涂抹效果
+> Loading跳动效果
 
 ## 效果演示
-<TextSmear />
+<JumpLoading />
 
 ## 源代码
 ### Vue代码
 ```vue
 <template>
   <div :class="$style['show-body']">
-    <div :class="$style['text-content']">HELLO CSS WORLD</div>
+    <div :class="$style['text-content']">
+      <div :class="$style.txt" style="--i: 1">L</div>
+      <div :class="$style.txt" style="--i: 2">o</div>
+      <div :class="$style.txt" style="--i: 3">a</div>
+      <div :class="$style.txt" style="--i: 4">d</div>
+      <div :class="$style.txt" style="--i: 5">i</div>
+      <div :class="$style.txt" style="--i: 6">n</div>
+      <div :class="$style.txt" style="--i: 7">g</div>
+    </div>
   </div>
 </template>
 ```
 
 ### css代码
 ```css
+<style module>
 .show-body {
   display: flex;
   height: 20vh;
@@ -26,34 +35,25 @@
 }
 .text-content {
   margin: auto;
-  color: #d1d1d1;
-  font-size: 38px;
+  color: #fff;
+  display: flex;
+  font-size: 70px;
   font-weight: bolder;
-  position: relative;
-  line-height: 1.2;
+  transform: translateY(-150%);
 }
 
-.text-content::before {
-  content: "HELLO CSS WORLD";
-  color: #06ee99;
-  position: absolute;
-  left: 0;
-  top: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: animate 5s linear infinite;
-  border-right: 5px solid #06ee99;
-  filter: drop-shadow(0 0 20px #06ee99);
+.text-content .txt {
+  animation: animate ease 0.5s infinite alternate;
+  animation-delay: calc(var(--i) / 10 * 1s);
 }
 
 @keyframes animate {
-  0% {
-    width: 0;
-  }
   100% {
-    width: 100%;
+    color: #91c5b0;
+    transform: translateY(50px);
   }
 }
+</style>
 ```
 
 ## 代码讲解
@@ -66,5 +66,5 @@
 - **`line-height`**：设置字体行高，保证动画效果跟父级元素（text-content）相对定位能够覆盖文字，如果太大，可以缩小
 
 <script setup>
-import TextSmear from "./TextSmear.vue"
+import JumpLoading from "./JumpLoading.vue"
 </script>

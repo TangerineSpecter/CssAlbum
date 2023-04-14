@@ -39,7 +39,8 @@ const config = {
                 {
                     text: '字体',
                     items: [
-                        { text: '涂抹效果', link: '/album/text/TextSmear' }
+                        { text: '涂抹效果', link: '/album/text/TextSmear' },
+                        { text: '跳动Loading', link: '/album/text/JumpLoading' }
                     ]
                 },
                 {

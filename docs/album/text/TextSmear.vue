@@ -1,10 +1,10 @@
 <template>
-  <div class="show-body">
-    <div class="text-content">HELLO CSS WORLD</div>
+  <div :class="$style['show-body']">
+    <div :class="$style['text-content']">HELLO CSS WORLD</div>
   </div>
 </template>
 
-<style scope>
+<style module>
 .show-body {
   display: flex;
   height: 20vh;

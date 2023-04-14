@@ -2,6 +2,7 @@
  * @type {import('vitepress').UserConfig}
  */
 const config = {
+    base: '/CssAlbum/',
     lang: 'zh-CN',
     title: 'CSS画册',
     description: '记录好玩好看的CSS效果',
@@ -11,7 +12,10 @@ const config = {
         searchMaxSuggestions: 10,
         docFooter: { prev: '上一篇', next: '下一篇' },
         lastUpdatedText: "最近更新时间",
-        // logo: '/my-logo.svg' logo配置
+        logo: '/icon.png',
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/TangerineSpecter' }
+        ],
         nav: [
             { text: '首页', link: '/' },
             { text: '基础', link: '/basic/index' },
@@ -31,7 +35,7 @@ const config = {
                 {
                     text: '字体',
                     items: [
-                        { text: '涂抹效果', link: '/album/text/HorseRacingLight' }
+                        { text: '涂抹效果', link: '/album/text/TextSmear' }
                     ]
                 },
                 {
@@ -41,6 +45,13 @@ const config = {
                     ]
                 }
             ]
+        }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@alias': '.vitepress/public/'
+            }
         }
     }
 }

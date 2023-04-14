@@ -2,19 +2,19 @@
 layout: home
 
 hero:
-  name: Process
+  name: CssAlbum
   text: CSS画册
   tagline: 记录好玩好看的CSS效果
   image:
     src: /logo.png
-    alt: VitePress
+    alt: logo
   actions:
     - theme: brand
       text: 浏览画册
       link: /album/
-    - theme: alt
-      text: 访问我的Github
-      link: https://github.com/TangerineSpecter
+    # - theme: alt
+    #   text: 访问我的Github
+    #   link: https://github.com/TangerineSpecter
 
 features:
   - icon: 😺
@@ -31,7 +31,22 @@ features:
 
 <style>
 :root {
+  /* 标题 */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient( 135deg, #FFA500 50%, #D85A0E 100%);
+  --vp-home-hero-image-filter: blur(150px);
+
+  /* brand按钮 */
+  /* --vp-button-brand-border: #F6CEEC;
+  --vp-button-brand-text: #F6CEEC;
+  --vp-button-brand-bg: #D939CD;
+
+  --vp-button-brand-hover-border: #F6CEEC;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-hover-bg: #D939CD;
+
+  --vp-button-brand-active-border: #F6CEEC; */
 }
 </style>

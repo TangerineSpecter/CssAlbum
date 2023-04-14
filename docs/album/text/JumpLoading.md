@@ -50,20 +50,23 @@
 @keyframes animate {
   100% {
     color: #91c5b0;
+    filter: drop-shadow(0 0 10px #91c5b0);
     transform: translateY(50px);
   }
 }
 </style>
 ```
 
+## 实现思路
+1. 给每个文字设置一个Y轴偏移的动画。
+2. 重点在于，给每个文字单独绑定延迟动画的时间，让动画效果错开，达到波动的效果。
+
 ## 代码讲解
-- **`@keyframes animate`**：关键帧（keyframes）规则，定义一个名为「 animate 」从0% ~ 100%的过度方式为宽度铺满。
-- **`animation`**：添加一个动画规则，绑定名为「 animate 」的动画，持续5秒，`linear`为线性匀速动画，`infinite`为无限循环。
-- **`filter`**：滤镜规则，dropp-shadow该滤镜会在元素周围添加阴影效果，偏移量为0，模糊程度为20px，阴影颜色等
-- **`border-right`**：用来实现移动的字符，表示设置一个5px的右边框，solid为实线，指定边框颜色
-- **`white-space: nowrap;`**：表示强制文本内容在一行显示，不能换行，超出宽度溢出边界
-- **`::before`**：伪元素选择器，表示在`.text-content`元素「前面 」使用一个伪元素
-- **`line-height`**：设置字体行高，保证动画效果跟父级元素（text-content）相对定位能够覆盖文字，如果太大，可以缩小
+- **`@keyframes animate`**：关键帧（keyframes）规则，定义一个名为「 animate 」100%的过度方式为Y轴偏移50px。
+- **`animation`**：添加一个动画规则，绑定名为「 animate 」的动画，持续5秒，`ease`缓动函数，开始和结束的时候慢下来，`infinite`为无限循环，`alternate`表示每次播放反向执行。
+- **`filter`**：滤镜规则，dropp-shadow该滤镜会在元素周围添加阴影效果，偏移量为0，模糊程度为10px，阴影颜色等。
+- **`style="--i: 1"`**：表示CSS自定义属性`--i`，并赋值为1。
+- **`animation-delay: calc(var(--i) / 10 * 1s)`**：表示动画延迟，`calc`进行计算，`var(--i)`和style定义的赋值对应，计算结果就是动画延迟时间。
 
 <script setup>
 import JumpLoading from "./JumpLoading.vue"

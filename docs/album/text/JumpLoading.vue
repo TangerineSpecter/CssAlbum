@@ -37,6 +37,7 @@
 @keyframes animate {
   100% {
     color: #91c5b0;
+    filter: drop-shadow(0 0 10px #91c5b0);
     transform: translateY(50px);
   }
 }

@@ -10,8 +10,8 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 开始欣赏
-      link: /guide/what-is-vitepress
+      text: 浏览画册
+      link: /album/
     - theme: alt
       text: 访问我的Github
       link: https://github.com/TangerineSpecter

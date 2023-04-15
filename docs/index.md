@@ -35,8 +35,8 @@ features:
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
   /* 图标背景 */
-  --vp-home-hero-image-background-image: linear-gradient( 135deg, #FFA500 50%, #D85A0E 100%);
-  --vp-home-hero-image-filter: blur(150px);
+  --vp-home-hero-image-background-image: linear-gradient( 335deg, #FFA500 55%, #60A425 45%);
+  --vp-home-hero-image-filter: blur(80px);
 
   /* brand按钮 */
   /* --vp-button-brand-border: #F6CEEC;

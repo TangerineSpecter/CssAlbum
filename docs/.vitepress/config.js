@@ -46,7 +46,7 @@ const config = {
                 {
                     text: '动画效果',
                     items: [
-                        // { text: '向日葵', link: '/album/animation/SunFlower' }
+                        { text: '毛玻璃', link: '/album/animation/ClarityGlass' }
                     ]
                 }
             ]

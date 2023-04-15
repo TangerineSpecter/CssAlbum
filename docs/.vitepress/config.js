@@ -48,6 +48,12 @@ const config = {
                     items: [
                         { text: '毛玻璃', link: '/album/animation/ClarityGlass' }
                     ]
+                },
+                {
+                    text: '时间效果',
+                    items: [
+                        { text: '赛博朋克时钟', link: '/album/clock/Cyberpunk' }
+                    ]
                 }
             ]
         }

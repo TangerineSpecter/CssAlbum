@@ -54,6 +54,12 @@ const config = {
                     items: [
                         { text: '赛博朋克时钟', link: '/album/clock/Cyberpunk' }
                     ]
+                },
+                {
+                    text: '艺术',
+                    items: [
+                        { text: '黑猫', link: '/album/art/BlackCat' }
+                    ]
                 }
             ]
         }

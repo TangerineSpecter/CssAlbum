@@ -11,8 +11,14 @@ const config = {
         search: true,
         searchMaxSuggestions: 10,
         docFooter: { prev: '上一篇', next: '下一篇' },
+        lastUpdated: true,
         lastUpdatedText: "最近更新时间",
         logo: '/icon.png',
+        algolia: {
+            appId: 'xxx',
+            apiKey: 'xxxx',
+            indexName: 'xxx'
+        },
         footer: {
             message: 'Released under the Apache-2.0 license License.',
             copyright: 'Copyright © 2023-present Evan You'

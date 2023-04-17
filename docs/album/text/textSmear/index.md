@@ -3,7 +3,7 @@
 > 文字涂抹效果
 
 ## 效果演示
-<TextSmear />
+<View />
 
 ## 源代码
 ### Vue代码
@@ -71,5 +71,5 @@
 - **`line-height`**：设置字体行高，保证动画效果跟父级元素（text-content）相对定位能够覆盖文字，如果太大，可以缩小
 
 <script setup>
-import TextSmear from "./TextSmear.vue"
+import View from "./Index.vue"
 </script>

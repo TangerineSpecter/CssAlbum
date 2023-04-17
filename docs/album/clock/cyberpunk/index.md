@@ -3,7 +3,7 @@
 > 赛博朋克时钟效果
 
 ## 效果演示
-<Cyberpunk />
+<View />
 
 ## 源代码
 ### Vue代码
@@ -99,5 +99,5 @@
 - **`place-items: center`**：Grid布局属性，将元素水平、垂直居中对齐。
 
 <script setup>
-import Cyberpunk from "./Cyberpunk.vue"
+import View from "./Index.vue"
 </script>

@@ -35,30 +35,37 @@ const config = {
                     ]
                 }
             ],
+            '/skill/': [
+                {
+                    items: [
+                        { text: '渐变色', link: '/skill/gradientColor/index' },
+                    ]
+                }
+            ],
             '/album/': [
                 {
                     text: '字体',
                     items: [
-                        { text: '涂抹效果', link: '/album/text/TextSmear' },
-                        { text: '跳动Loading', link: '/album/text/JumpLoading' }
+                        { text: '涂抹效果', link: '/album/text/textSmear/index' },
+                        { text: '跳动Loading', link: '/album/text/jumpLoading/index' }
                     ]
                 },
                 {
                     text: '动画效果',
                     items: [
-                        { text: '毛玻璃', link: '/album/animation/ClarityGlass' }
+                        { text: '毛玻璃', link: '/album/animation/clarityGlass/index' }
                     ]
                 },
                 {
                     text: '时间效果',
                     items: [
-                        { text: '赛博朋克时钟', link: '/album/clock/Cyberpunk' }
+                        { text: '赛博朋克时钟', link: '/album/clock/cyberpunk/index' }
                     ]
                 },
                 {
                     text: '艺术',
                     items: [
-                        { text: '黑猫', link: '/album/art/BlackCat' }
+                        { text: '黑猫', link: '/album/art/blackCat/index' }
                     ]
                 }
             ]

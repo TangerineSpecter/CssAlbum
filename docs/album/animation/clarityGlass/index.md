@@ -3,7 +3,7 @@
 > 毛玻璃遮挡小球
 
 ## 效果演示
-<ClarityGlass />
+<View />
 
 ## 源代码
 ### Vue代码
@@ -106,5 +106,5 @@
 - **`ease-in-out`**：动画开始和结束的速度比较平滑过度，缓慢加速，缓慢减速。而`ease`是开始快，然后逐渐减速到结束。
 
 <script setup>
-import ClarityGlass from "./ClarityGlass.vue"
+import View from "./Index.vue"
 </script>

@@ -3,7 +3,7 @@
 > =v=画一只黑猫给你看
 
 ## 效果演示
-<BlackCat />
+<View />
 
 ## 源代码
 ### Vue代码
@@ -252,5 +252,5 @@
 
 
 <script setup>
-import BlackCat from "./BlackCat.vue"
+import View from "./Index.vue"
 </script>

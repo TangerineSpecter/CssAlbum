@@ -3,7 +3,7 @@
 > Loading跳动效果
 
 ## 效果演示
-<JumpLoading />
+<View />
 
 ## 源代码
 ### Vue代码
@@ -69,5 +69,5 @@
 - **`animation-delay: calc(var(--i) / 10 * 1s)`**：表示动画延迟，`calc`进行计算，`var(--i)`和style定义的赋值对应，计算结果就是动画延迟时间。
 
 <script setup>
-import JumpLoading from "./JumpLoading.vue"
+import View from "./Index.vue"
 </script>

@@ -1,6 +1,3 @@
-# CssAlbum
-
-
 <div align="center">
 <br/>
 <br/>
@@ -17,7 +14,10 @@
         <img src="https://img.shields.io/badge/Css Album-1.0.0-green.svg" alt="CssAlbum version">
     </a>        
     <a href="#">
-        <img src="https://img.shields.io/badge/VitePress-1.0.0-green.svg" alt="VitePress Version">
+        <img src="https://img.shields.io/badge/VitePress-1.0.0-green.svg" alt="Vite Press Version">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/badge/Vue-3.2.47-green.svg" alt="Vue Version">
     </a>
 </p>
 

@@ -14,7 +14,7 @@
 
 <p align="center">
     <a href="#">
-        <img src="https://img.shields.io/badge/Css Album-green.svg" alt="CssAlbum version">
+        <img src="https://img.shields.io/badge/Css Album-1.0.0-green.svg" alt="CssAlbum version">
     </a>        
     <a href="#">
         <img src="https://img.shields.io/badge/VitePress-1.0.0-green.svg" alt="VitePress Version">
@@ -30,3 +30,14 @@
 > 记录一些好看实用的CSS技巧和效果
 
 本项目主要用于日常样式收集和学习，内容持续更新中...
+
+
+## 说明
+
+**本地运行**
+```shell
+# git clone克隆到本地，编译
+npm install
+# 运行
+npm run docs:dev
+```

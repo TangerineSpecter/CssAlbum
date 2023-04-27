@@ -13,6 +13,8 @@ const config = {
         docFooter: { prev: '上一篇', next: '下一篇' },
         lastUpdated: true,
         lastUpdatedText: "最近更新时间",
+        outlineTitle: "本页目录",
+        outline: ['2', '3'],
         logo: '/icon.png',
         algolia: {
             appId: 'xxx',
@@ -54,6 +56,12 @@ const config = {
                     items: [
                         { text: '涂抹效果', link: '/album/text/textSmear/index' },
                         { text: '跳动Loading', link: '/album/text/jumpLoading/index' }
+                    ]
+                },
+                {
+                    text: '按钮',
+                    items: [
+                        { text: '三只小鸟', link: '/album/button/bird/index' }
                     ]
                 },
                 {

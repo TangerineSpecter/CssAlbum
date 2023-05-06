@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a,x as s}from"./chunks/framework.ef813edc.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"basic/index.md"}'),n={name:"basic/index.md"},o=s("h1",null,"CSS基础",-1),c=[o];function r(i,d,_,p,l,m){return t(),a("div",null,c)}const h=e(n,[["render",r]]);export{x as __pageData,h as default};

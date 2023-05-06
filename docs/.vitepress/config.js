@@ -37,9 +37,8 @@ const config = {
         sidebar: {
             '/basic/': [
                 {
-                    text: 'CSS语法',
                     items: [
-                        { text: 'Text(文本)', link: '/text' },
+                        { text: 'flex弹性布局', link: '/basic/flex/index' },
                     ]
                 }
             ],

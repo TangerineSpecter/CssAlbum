@@ -21,7 +21,7 @@
 
 .container {
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
   height: 250px;
   width: 250px;
   border: dashed 2px white;

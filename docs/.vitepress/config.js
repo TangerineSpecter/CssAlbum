@@ -66,7 +66,8 @@ const config = {
                 {
                     text: '动画效果',
                     items: [
-                        { text: '毛玻璃', link: '/album/animation/clarityGlass/index' }
+                        { text: '毛玻璃', link: '/album/animation/clarityGlass/index' },
+                        { text: '文字雨', link: '/album/animation/wordRain/index' }
                     ]
                 },
                 {
